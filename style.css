@@ -5,6 +5,7 @@
 }
 
 body {
+	background-color: #393e46;
 	display: flex;
 	height: 100vh;
 	align-items: center;
@@ -15,28 +16,24 @@ body {
 .empty {
 	width: 150px;
 	height: 150px;
-	border: 2px solid #111;
+	border: 2px solid #fff;
 	margin: 10px;
-	overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .fill {
 	background-image: url(https://source.unsplash.com/random/150x150);
-	width: 148px;
-	height: 148px;
+	width: 145px;
+	height: 145px;
 	cursor: pointer;
 }
 
 .hold {
-    border: 2px solid rgb(218, 218, 218);
+	border: 3px solid #fff;
 }
 
 .hover {
-    border: 2px dashed #111;
-    background-color: #888;
+	border: 2px dashed #fff;
+	background-color: #00adb5;
 }
 
 @media screen and (max-width: 800px) {
