@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
-
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -7,12 +5,42 @@
 }
 
 body {
-	background-color: #252a34;
-	font-family: 'roboto', sans-serif;
 	display: flex;
 	height: 100vh;
-	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	overflow: hidden; /* Use to hide the scrool bar */
+}
+
+.empty {
+	width: 150px;
+	height: 150px;
+	border: 2px solid #111;
+	margin: 10px;
+	overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fill {
+	background-image: url(https://source.unsplash.com/random/150x150);
+	width: 148px;
+	height: 148px;
+	cursor: pointer;
+}
+
+.hold {
+    border: 2px solid rgb(218, 218, 218);
+}
+
+.hover {
+    border: 2px dashed #111;
+    background-color: #888;
+}
+
+@media screen and (max-width: 800px) {
+	body {
+		flex-direction: column;
+	}
 }
